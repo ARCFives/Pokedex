@@ -1,0 +1,118 @@
+.cartao-pokemon {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    display: none;
+}
+
+.cartao-pokemon .cartao-topo {
+    background-color: #fff;
+    padding: 30px 40px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cartao-pokemon .nome {
+    margin-bottom: 5px;
+}
+
+.cartao-pokemon .tipo {
+    font-size: 12px;
+    opacity: 0.8;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+
+.cartao-pokemon .detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-pokemon .cartao-image {
+    width: 350px;
+    height: 350px;
+}
+
+.cartao-pokemon .som{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-pokemon .cry {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+        
+}
+
+.cartao-pokemon .cry:hover {
+    transform: scale(1.25);
+}
+
+
+.cartao-pokemon img {
+    max-height: 100%;
+}
+
+.cartao-pokemon .cartao-informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    background-color: #30a7d7;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-pokemon .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+}
+
+.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades{
+    padding: 0 10px;
+    width: 180px;
+}
+
+.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li{
+    font-size: 15px;
+}
+
+.cartao-pokemon.aberto {
+    display: block;
+}
+
+.tipo-fogo {
+    background-color: #fd7d24;
+}
+
+.tipo-eletrico {
+    background-color: #eed535;
+}
+
+.tipo-agua {
+    background-color: #4592c4;
+}
+
+.tipo-dragao {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+}
+
+.tipo-grama {
+    background-color: #9bcc50;
+}
+
+.tipo-ghost {
+    background-color: #7b62a3;
+}
+
+.tipo-voador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.tipo-normal {
+    background-color: #a4acaf;
+}

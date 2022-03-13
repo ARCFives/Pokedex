@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - MapaDev Week</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/cartao.css">
+    <link rel="stylesheet" href="src/css/listagem.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet"> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/imagens/favicon-16x16.png">
+    <link rel="manifest" href="src/imagens/site.webmanifest">
+    
+</head>
+<body>
+    <main>
+        <div class="pokedex">
+            <div class="cartoes-pokemon">
+                <!--Pikachu -->
+                <div class="cartao-pokemon aberto" id="cartao-pikachu">
+                <div class="cartao-topo">
+                    <div class="detalhes">
+                        <h2 class="nome">Pikachu</h2>
+                        <span>#025</span>
+                        
+
+                    </div>
+                    <div class="som">
+                        <span class="tipo tipo-eletrico">Elétrico</span>
+                        <img src="src/imagens/sound.png" alt="som do pokemon" class="cry" id="grito" onclick="grito(pikachu)">
+
+                    </div>
+                    
+
+                    <div class="cartao-image">
+                        <img src="src/imagens/pikachu.png" alt="Imagem do pikachu">
+                        
+                    </div>
+                </div>
+
+                <div class="cartao-informacoes">
+
+                    <div class="status">
+                        <h3>Status</h3>
+
+                        <ul>
+                            <li>HP: 300</li>
+                            <li>Ataque: 600</li>
+                            <li>Defesa: 300</li>
+                            <li>Velocidade: 300</li>
+                            <li>Total: 1700</li>
+                        </ul>
+
+                    </div>
+                    <div class="habilidades">
+
+                        <h3>Habilidades</h3>
+                        
+                        <ul>
+                            <li>Choque do trovão</li>
+                            <li>Ataque Rápido</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <!--Bulbasaur -->
+                <div class="cartao-pokemon" id="cartao-bulbasaur">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Bulbasaur</h2>
+                            <span>#001</span>
+    
+                        </div>
+                        <div class="som">
+                            <span class="tipo tipo-grama">Grama</span>
+                            <img src="src/imagens/sound.png" alt="soundo pokemon" class="cry" id="grito" onclick="grito(bulbasaur)">
+                        </div>
+    
+                        <div class="cartao-image">
+                            <img src="src/imagens/bulbasaur.png" alt="Imagem do Bulbasaur" />
+                        </div>
+                    </div>
+    
+                    <div class="cartao-informacoes">
+    
+                        <div class="status">
+                            <h3>Status</h3>
+    
+                            <ul>
+                                <li>HP: 400</li>
+                                <li>Ataque: 500</li>
+                                <li>Defesa: 400</li>
+                                <li>Velocidade: 300</li>
+                                <li>Total: 1900</li>
+                            </ul>
+    
+                        </div>
+                        <div class="habilidades">
+                            
+                            <h3>Habilidades</h3>
+                            
+                            <ul>
+                                <li>Chicote Navalha</li>
+                                <li>Pó Venenoso</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Charmander -->
+                <div class="cartao-pokemon" id="cartao-charmander">
+                        <div class="cartao-topo">
+                            <div class="detalhes">
+                                <h2 class="nome">Charmander</h2>
+                                <span>#004</span>
+        
+                            </div>
+                            <div class="som">
+                                <span class="tipo tipo-fogo">Fogo</span>
+                                <img src="src/imagens/sound.png" alt="soundo pokemon" class="cry" onclick="grito(charmander)">
+                            </div>
+        
+                            <div class="cartao-image">
+                                <img src="src/imagens/charmander.png" alt="Imagem do charmander">
+                            </div>
+                        </div>
+        
+                        <div class="cartao-informacoes">
+        
+                            <div class="status">
+                                <h3>Status</h3>
+        
+                                <ul>
+                                    <li>HP: 400</li>
+                                    <li>Ataque: 600</li>
+                                    <li>Defesa: 200</li>
+                                    <li>Velocidade: 250</li>
+                                    <li>Total: 1650</li>
+                                </ul>
+        
+                            </div>
+                            <div class="habilidades">
+                                
+                                <h3>Habilidades</h3>
+                                
+                                <ul>
+                                    <li>Lança Chamas</li>
+                                    <li>Brasas</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+
+                <!--Dragonite -->
+                <div class="cartao-pokemon" id="cartao-dragonite">
+                            <div class="cartao-topo">
+                                <div class="detalhes">
+                                    <h2 class="nome">Dragonite</h2>
+                                    <span>#149</span>
+            
+                                </div>
+                                <div class="som">
+                                    <span class="tipo tipo-dragao">Dragão</span>
+                                    <img src="src/imagens/sound.png" alt="soundo pokemon" class="cry" onclick="grito(dragonite)">
+                                </div>
+            
+                                <div class="cartao-image">
+                                    <img src="src/imagens/dragonite.png" alt="Imagem do dragonite">
+                                </div>
+                            </div>
+            
+                            <div class="cartao-informacoes">
+            
+                                <div class="status">
+                                    <h3>Status</h3>
+            
+                                    <ul>
+                                        <li>HP: 500</li>
+                                        <li>Ataque: 800</li>
+                                        <li>Defesa: 400</li>
+                                        <li>Velocidade: 200</li>
+                                        <li>Total: 1900</li>
+                                    </ul>
+            
+                                </div>
+                                <div class="habilidades">
+                                    
+                                    <h3>Habilidades</h3>
+                                    
+                                    <ul>
+                                        <li>Ciclone</li>
+                                        <li>Garra do Dragão</li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+
+                <!--Gengar -->
+                <div class="cartao-pokemon" id="cartao-gengar">
+                    <div class="cartao-topo">
+                        <div class="detalhes">
+                            <h2 class="nome">Gengar</h2>
+                            <span>#094</span>
+    
+                        </div>
+                        <div class="som">
+                            <span class="tipo tipo-ghost">Fantasma</span>
+                            <img src="src/imagens/sound.png" alt="soundo pokemon" class="cry" onclick="grito(gengar)">
+                        </div>
+    
+                        <div class="cartao-image">
+                            <img src="src/imagens/gengar.png" alt="Imagem do Gengar">
+                        </div>
+                    </div>
+    
+                    <div class="cartao-informacoes">
+    
+                        <div class="status">
+                            <h3>Status</h3>
+    
+                            <ul>
+                                <li>HP: 300</li>
+                                <li>Ataque: 500</li>
+                                <li>Defesa: 300</li>
+                                <li>Velocidade: 300</li>
+                                <li>Total: 1600</li>
+                            </ul>
+    
+                        </div>
+                        <div class="habilidades">
+                            
+                            <h3>Habilidades</h3>
+                            
+                            <ul>
+                                <li>Pulso Sombrio</li>
+                                <li>Assustar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                <!--Gyarados -->
+                <div class="cartao-pokemon" id="cartao-gyarados">
+                        <div class="cartao-topo">
+                            <div class="detalhes">
+                                <h2 class="nome">Gyarados</h2>
+                                <span>#130</span>
+        
+                            </div>
+                            <div class="som">
+                                <span class="tipo tipo-agua">Água</span>
+                                <img src="src/imagens/sound.png" alt="soundo pokemon" class="cry" onclick="grito(gyarados)">
+                            </div>
+        
+                            <div class="cartao-image">
+                                <img src="src/imagens/gyarados.png" alt="Imagem do Gyarados">
+                            </div>
+                        </div>
+        
+                        <div class="cartao-informacoes">
+        
+                            <div class="status">
+                                <h3>Status</h3>
+        
+                                <ul>
+                                    <li>HP: 500</li>
+                                    <li>Ataque: 700</li>
+                                    <li>Defesa: 300</li>
+                                    <li>Velocidade: 200</li>
+                                    <li>Total: 1700</li>
+                                </ul>
+        
+                            </div>
+                            <div class="habilidades">
+                                
+                                <h3>Habilidades</h3>
+                                
+                                <ul>
+                                    <li>Surf</li>
+                                    <li>Jato d' água</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Pidgey -->
+                <div class="cartao-pokemon aberto" id="cartao-pidgey">
+                        <div class="cartao-topo">
+                            <div class="detalhes">
+                                <h2 class="nome">Pidgey</h2>
+                                <span>#016</span>
+                                
+        
+                            </div>
+                            <div class="som">
+                                <span class="tipo tipo-voador">Voador</span>
+                                <img src="src/imagens/sound.png" alt="som do pokemon" class="cry" id="grito" onclick="grito(pidgey)">
+        
+                            </div>
+                            
+        
+                            <div class="cartao-image">
+                                <img src="src/imagens/pidgey.png" alt="Imagem do pidgey">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="cartao-informacoes">
+        
+                            <div class="status">
+                                <h3>Status</h3>
+        
+                                <ul>
+                                    <li>HP: 300</li>
+                                    <li>Ataque: 400</li>
+                                    <li>Defesa: 300</li>
+                                    <li>Velocidade: 500</li>
+                                    <li>Total: 1700</li>
+                                </ul>
+        
+                            </div>
+                            <div class="habilidades">
+        
+                                <h3>Habilidades</h3>
+                                
+                                <ul>
+                                    <li>Voar</li>
+                                    <li>Ataque Rápido</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!-- Ditto  -->
+                <div class="cartao-pokemon aberto" id="cartao-ditto">
+                            <div class="cartao-topo">
+                                <div class="detalhes">
+                                    <h2 class="nome">Ditto</h2>
+                                    <span>#132</span>
+                                    
+            
+                                </div>
+                                <div class="som">
+                                    <span class="tipo tipo-normal">Normal</span>
+                                    <img src="src/imagens/sound.png" alt="som do pokemon" class="cry" id="grito" onclick="grito(ditto)">
+            
+                                </div>
+                                
+            
+                                <div class="cartao-image">
+                                    <img src="src/imagens/ditto.png" alt="Imagem do ditto">
+                                    
+                                </div>
+                            </div>
+            
+                            <div class="cartao-informacoes">
+            
+                                <div class="status">
+                                    <h3>Status</h3>
+            
+                                    <ul>
+                                        <li>HP: 200</li>
+                                        <li>Ataque: 300</li>
+                                        <li>Defesa: 200</li>
+                                        <li>Velocidade: 300</li>
+                                        <li>Total: 1400</li>
+                                    </ul>
+            
+                                </div>
+                                <div class="habilidades">
+            
+                                    <h3>Habilidades</h3>
+                                    
+                                    <ul>
+                                        <li>Transformar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+            <nav class="listagem">
+                <ul>
+                    <li class="pokemon ativo" id="pikachu">
+                        <img src="src/imagens/cabeca-pikachu.png" alt="cabeca do pikachu">
+                        <span>Pikachu</span>
+                    </li>
+                    <li class="pokemon" id="bulbasaur">
+                        <img src="src/imagens/cabeca-bulbasaur.png" alt="cabeca do bulbasaur">
+                        <span>Bulbasaur</span>
+                    </li>
+                    <li class="pokemon" id="charmander">
+                        <img src="src/imagens/cabeca-charmander.png" alt="cabeca do charmander">
+                        <span>Charmander</span>
+                    </li>
+                    <li class="pokemon" id="dragonite">
+                        <img src="src/imagens/cabeca-dragonite.png" alt="cabeca do dragonite">
+                        <span>Dragonite</span>
+                    </li>
+                    <li class="pokemon" id="gengar">
+                        <img src="src/imagens/cabeca-gengar.png" alt="cabeca do gengar">
+                        <span>Gengar</span>
+                    </li>
+                    <li class="pokemon" id="gyarados">
+                        <img src="src/imagens/cabeca-gyarados.png" alt="cabeca do gyarados">
+                        <span>Gyarados</span>
+                    </li>
+                    <li class="pokemon" id="pidgey">
+                        <img src="src/imagens/cabeca-pidgey.png" alt="cabeca do pidgey">
+                        <span>Pidgey</span>
+                    </li>
+                    <li class="pokemon" id="ditto">
+                        <img src="src/imagens/cabeca-ditto.png" alt="cabeca do ditto">
+                        <span>Ditto</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <script src="src/js/index.js"></script>
+</body>
+</html>
