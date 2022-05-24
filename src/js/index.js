@@ -1,51 +1,16 @@
-
 const listaSelecaoPokemons = document.querySelectorAll('.pokemon')
 const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
+const gritoPokemonSele = document.querySelectorAll('.cry')
+let nomePokemon = 'pikachu'
+ 
+gritoPokemonSele.forEach(cry => {
+    cry.addEventListener('click', () => {
+        const gritoPokemon = new Audio ()
+        gritoPokemon.src = `src/audio/${nomePokemon}.wav`
+        gritoPokemon.play()   
+    })
+})
 
-// função dos sons dos pokémons
-function grito(nome){
-    const somPokemon = new Audio()
-    switch (nome) {
-        case pikachu:
-            somPokemon.src = 'src/audio/pikachu.wav'
-            somPokemon.play()
-            break;
-        
-        case bulbasaur:
-            somPokemon.src = 'src/audio/bulbasaur.mp3'
-            somPokemon.play()
-            break;
-        case charmander:
-            somPokemon.src = 'src/audio/charmander.wav'
-            somPokemon.play()
-            break;
-        case dragonite:
-            somPokemon.src = 'src/audio/dragonite.wav'
-            somPokemon.play()
-            break;
-        case gengar:
-            somPokemon.src = 'src/audio/gengar.wav'
-            somPokemon.play()
-            break;
-        case gyarados:
-            somPokemon.src = 'src/audio/gyarados.wav'
-            somPokemon.play()
-            break;
-        case pidgey:
-            somPokemon.src = 'src/audio/pidgey.wav'
-            somPokemon.play()
-            break;
-        case ditto:
-            somPokemon.src = 'src/audio/ditto.wav'
-            somPokemon.play()
-            break;
-        default: alert('sem audio')
-            break;
-    }tch
-} 
-
-
-// Função de seleçao dos pokémons
  listaSelecaoPokemons.forEach(pokemon => {
      pokemon.addEventListener('click', () => {
         // remover o cartão
@@ -57,6 +22,7 @@ function grito(nome){
         const idCartaoAbrir = 'cartao-' + idPokemonselecionado
         const cartaoPokemonParaAbrir = document.getElementById(idCartaoAbrir)
         cartaoPokemonParaAbrir.classList.add('aberto')
+        nomePokemon = idPokemonselecionado
 
         // remover ativo da lista
         const pokemonAtivo = document.querySelector('.ativo')
